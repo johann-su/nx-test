@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "postgres",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "autoOffice",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/entities/**/*.ts"],
+  "migrations": ["src/migrations/**/*.ts"],
+  "subscribers": ["src/subscribers/**/*.ts"],
+  "cli": {
+    "entities_dir": "src/entities",
+    "migrations_dir": "src/migrations",
+    "subscribers_dir": "src/subscribers"
+  }
+}
