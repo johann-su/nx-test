@@ -32,6 +32,12 @@
         "buildTarget": "api:build"
       }
     },
+    "db": {
+      "executor": "@nrwl/workspace:run-commands",
+      "commands": [{
+        "command": "docker-compose up"
+      }]
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],

@@ -21,6 +21,7 @@ async function startServer(typeDefs, resolvers) {
     password: "postgres",
     database: "autoOffice",
     synchronize: true,
+    dropSchema: true,
     logging: false,
   });
 

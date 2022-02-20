@@ -3,17 +3,20 @@ import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 @Entity()
 export class Address extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
-  id: string;
+  id: string
 
   @Column("string")
-  street: string;
+  street: string
 
   @Column("string")
-  number: string;
-
-  @Column("number")
-  postCode: number;
+  number: string
 
   @Column("string")
-  city: string;
+  postCode: string
+
+  @Column("string")
+  city: string
+
+  @Column("string")
+  geocode: string
 }

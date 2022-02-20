@@ -1,18 +1,22 @@
-import { BaseEntity, Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { BaseEntity, Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Address } from "./Address";
+import { Project } from "./Project";
 
 @Entity()
 export class Customer extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
-  id: string;
+  id: string
 
   @Column("string")
-  name: string;
+  name: string
 
   @Column("string")
-  firstName: string;
+  firstName: string
 
   @OneToOne(() => Address)
   @JoinColumn()
-  profile: Address;
+  address: Address
+
+  @OneToMany(() => Project, project => project.customer)
+  projects: Project[]
 }
