@@ -40,3 +40,6 @@ Thumbs.db
 
 # Database data
 pgdata
+
+# package-lock
+package-lock.json
