@@ -1,0 +1,23 @@
+name: 'test/lint'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - uses: mansagroup/nrwl-nx-action@v2
+        with:
+          targets: lint,test,build,deploy
+          nxCloud: 'true'
