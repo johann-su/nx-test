@@ -1,3 +1,5 @@
+[![test/lint](https://github.com/johann-su/nx-test/actions/workflows/test.yml/badge.svg)](https://github.com/johann-su/nx-test/actions/workflows/test.yml)
+
 ## Install dependencies
 `npm i`
 ## Starting Postgres db
