@@ -10,13 +10,6 @@ env:
   NX_CLOUD_DISTRIBUTED_EXECUTION: true
 
 jobs:
-  code_coverage:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: romeovs/lcov-reporter-action@v0.2.16
-        with:
-          lcov-file: ./coverage/lcov.info
-
   build:
     runs-on: ubuntu-latest
     steps:
