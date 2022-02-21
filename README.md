@@ -1,4 +1,5 @@
 [![test/lint](https://github.com/johann-su/nx-test/actions/workflows/test.yml/badge.svg)](https://github.com/johann-su/nx-test/actions/workflows/test.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fa7e891530514425bdc1676ebaa787fd)](https://www.codacy.com/gh/johann-su/nx-test/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=johann-su/nx-test&amp;utm_campaign=Badge_Grade)
 
 ## Install dependencies
 `npm i`
