@@ -2,7 +2,7 @@ import { BaseEntity, Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGen
 import { Address } from "./Address";
 import { Project } from "./Project";
 
-@Entity()
+@Entity("customer")
 export class Customer extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string

@@ -23,6 +23,7 @@ async function startServer(typeDefs, resolvers) {
     synchronize: true,
     dropSchema: true,
     logging: false,
+    entities: ["src/entities/*.ts"],
   });
 
   await server.start();

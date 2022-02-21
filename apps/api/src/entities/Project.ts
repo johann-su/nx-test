@@ -18,7 +18,7 @@ export enum ProjectStatus {
   warranty
 }
 
-@Entity()
+@Entity("project")
 export class Project extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;

@@ -2,7 +2,7 @@ import { Column, Entity, JoinColumn, OneToOne } from "typeorm";
 import { Address } from "./Address";
 import { User } from "./User";
 
-@Entity()
+@Entity("employee")
 export class Employee extends User {
   @Column("string")
   name: string

@@ -2,7 +2,7 @@ import { BaseEntity, Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOn
 import { Material } from "./Material";
 import { Unit } from "./Unit";
 
-@Entity()
+@Entity("task")
 export class Task extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string

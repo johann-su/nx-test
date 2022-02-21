@@ -12,40 +12,40 @@ import { Address } from "./entities/Address"
 
 export const resolvers = {
   Query: {
-    address: (id: string) =>  Address.find({ id }),
+    address: (parent, {id}) =>  Address.find({ id }),
     addresses: () => Address.find(),
 
-    customer: (id: string) => Customer.findOne({ id }),
+    customer: (parent, { id }) => Customer.findOne({ id }),
     customers: () => Customer.find(),
 
-    employee: (id: string) => Employee.findOne({ id }),
+    employee: (parent, { id }) => Employee.findOne({ id }),
     employees: () => Employee.find(),
 
-    file: (id: string) => File.findOne({ id }),
+    file: (parent, { id }) => File.findOne({ id }),
     files: () => File.find(),
 
-    invoice: (id: string) => Invoice.findOne({ id }),
+    invoice: (parent, { id }) => Invoice.findOne({ id }),
     invoices: () => Invoice.find(),
 
-    material: (id: string) => Material.findOne({ id }),
+    material: (parent, { id }) => Material.findOne({ id }),
     materials: () => Material.find(),
 
-    offer: (id: string) => Offer.findOne({id}),
+    offer: (parent, { id }) => Offer.findOne({id}),
     offers: () => Offer.find(),
 
-    project: (id: string) => Project.findOne({id}),
+    project: (parent, { id }) => Project.findOne({id}),
     projects: () => Project.findOne(),
 
-    task: (id: string) => Task.findOne({id}),
+    task: (parent, { id }) => Task.findOne({id}),
     tasks: () => Task.find(),
 
-    unit: (id: string) => Unit.findOne({id}),
+    unit: (parent, { id }) => Unit.findOne({id}),
     units: () => Unit.find(),
 
-    user: (id: string) => User.findOne(id),
+    user: (parent, { id }) => User.findOne(id),
     users: () => User.find()
   },
   Mutation: {
-    // createAddress: (id: string) => ""
+    // createAddress: () => ""
   }
 }

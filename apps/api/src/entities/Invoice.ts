@@ -2,7 +2,7 @@ import { Column, Entity, OneToOne } from 'typeorm'
 import {File} from './File'
 import { Project } from './Project';
 
-@Entity()
+@Entity("invoice")
 export class Invoice extends File {
   @Column("money")
   amount: number;

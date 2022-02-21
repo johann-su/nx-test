@@ -100,37 +100,37 @@ export const typeDefs = gql`
   }
 
   type Query {
-    address: Address,
+    address(id: String): Address,
     addresses: [Address],
 
-    customer: Customer,
+    customer(id: String): Customer,
     customers: [Customer],
 
-    employee: Employee,
+    employee(id: String): Employee,
     employees: [Employee],
 
-    file: File,
+    file(id: String): File,
     files: [File],
 
-    invoice: Invoice,
+    invoice(id: String): Invoice,
     invoices: [Invoice],
 
-    material: Material,
+    material(id: String): Material,
     materials: [Material],
 
-    offer: Offer,
+    offer(id:String): Offer,
     offers: [Offer],
 
-    project: Project,
+    project(id:String): Project,
     projects: [Project],
 
-    task: Task,
+    task(id:String): Task,
     tasks: [Task],
 
-    unit: Unit,
+    unit(id:String): Unit,
     units: [Unit],
 
-    user: User,
+    user(id:String): User,
     users: [User]
   }
 
@@ -139,40 +139,40 @@ export const typeDefs = gql`
     editAddress: Address,
     deleteAddress: Boolean,
 
-    createCustomer: Customer,
-    editCustomer: Customer,
-    deleteCustomer: Boolean,
+    # createCustomer: Customer,
+    # editCustomer(id:String): Customer,
+    # deleteCustomer(id:String): Boolean,
 
-    createFile: File,
-    editFile: File,
-    deleteFile: Boolean,
+    # createFile: File,
+    # editFile(id:String): File,
+    # deleteFile(id:String): Boolean,
 
-    createInvoice: Invoice,
-    editInvoice: Invoice,
-    deleteInvoice: Boolean,
+    # createInvoice: Invoice,
+    # editInvoice(id:String): Invoice,
+    # deleteInvoice(id:String): Boolean,
 
-    createMaterial: Material,
-    editMaterial: Material,
-    deleteMaterial: Boolean,
+    # createMaterial: Material,
+    # editMaterial(id:String): Material,
+    # deleteMaterial(id:String): Boolean,
 
-    createOffer: Offer,
-    editOffer: Offer,
-    deleteOffer: Boolean,
+    # createOffer: Offer,
+    # editOffer(id:String): Offer,
+    # deleteOffer(id:String): Boolean,
 
-    createProject: Project,
-    editProject: Project,
-    deleteProject: Boolean,
+    # createProject: Project,
+    # editProject(id:String): Project,
+    # deleteProject(id:String): Boolean,
 
-    createTask: Task,
-    editTask: Task,
-    deleteTask: Boolean,
+    # createTask: Task,
+    # editTask(id:String): Task,
+    # deleteTask(id:String): Boolean,
 
-    createUnit: Unit,
-    editUnit: Unit,
-    deleteUnit: Boolean,
+    # createUnit: Unit,
+    # editUnit(id:String): Unit,
+    # deleteUnit(id:String): Boolean,
 
-    createUser: User,
-    editUser: User,
-    deleteUser: Boolean
+    # createUser: User,
+    # editUser(id:String): User,
+    # deleteUser(id:String): Boolean
   }
 `;
